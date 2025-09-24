@@ -1,0 +1,110 @@
+const dados = [
+  {
+    "id": "1",
+    "nome": "Carros 1",
+    "nota": 4.8,
+    "img": "https://upload.wikimedia.org/wikipedia/pt/9/9b/Carros_p%C3%B4ster.jpg",
+    "sinopse": "Relâmpago McQueen, um carro de corrida ambicioso, se perde a caminho de uma competição e acaba preso em Radiator Springs, uma cidadezinha esquecida. Lá ele aprende sobre amizade, humildade e que correr não é só sobre vencer.",
+  },
+
+  {
+    "id": "2",
+    "nome": "Carros 2",
+    "nota": 4.6,
+    "img": "https://th.bing.com/th/id/OSK.XL_QnhpWTN71PtHbKcLOICAl67IRkZSRAOYHBcg57rQ?w=80&h=118&c=7&o=6&dpr=1.3&pid=SANGAM",
+     "sinopse": "McQueen viaja pelo mundo para competir no Grand Prix Mundial, mas Mate, seu amigo guincho, se envolve sem querer em uma missão de espionagem internacional, misturando corrida com ação de espiões.",
+  },
+  {
+    "id": "3",
+    "nome": "Carros 3",
+    "nota": 4.6,
+    "img": "https://th.bing.com/th/id/OSK.UoFbwBNmcsMG0BwqlfvDY0-uim8Fpjl4OIuDQaUqWi8?w=80&h=118&c=7&o=6&dpr=1.3&pid=SANGAM",
+     "sinopse": "McQueen já veterano enfrenta uma nova geração de carros de corrida mais modernos e tecnológicos. Após um acidente grave, ele precisa decidir se ainda tem espaço nas pistas ou se chegou a hora de passar o legado para a novata Cruz Ramirez.",
+  },
+  {
+    "id": "4",
+    "nome": "Os Caras Malvados",
+    "nota": 4.3,
+    "img": "https://www.bing.com/th/id/OIP.dmebnnNnWib5xafZOLKLiAHaJQ?w=149&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+     "sinopse": "Um grupo de animais ladrões – Sr. Lobo, Srta. Tarântula, Sr. Tubarão, Sr. Piranha e Sr. Cobra – vive praticando crimes ousados até ser finalmente capturado. O carismático líder, Sr. Lobo, negocia uma chance fora da prisão: o grupo fingirá se reabilitar como cidadãos-modelo. Sob a supervisão do mentor Professor Marmelada, eles tentam enganar a sociedade... mas o Sr. Lobo começa a questionar se, no fundo, fazer o bem não seria a melhor vida possível",
+  },
+  {
+    "id": "5",
+    "nome": "Os Caras Malvados 2",
+    "nota": 4.4,
+    "img": "https://th.bing.com/th/id/OIP.wgQm_hnNkMCoe73GOiih6AHaLv?w=115&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+     "sinopse": "Cinco anos depois, os ex-criminosos reformados lutam para conquistar confiança e aceitação como bons cidadãos. Quando um grupo de criminosas formado apenas por mulheres os força a sair da aposentadoria para realizar “um último trabalho”, a gangue se vê envolvida em uma nova aventura cheia de trapaças e coragem",
+  },
+  {
+    "id": "6",
+    "nome": "Zootopia",
+    "nota": 4.4,
+    "img": "https://upload.wikimedia.org/wikipedia/pt/3/3b/ZootopiaOficialPoster.jpg",
+     "sinopse": "Como parceiros oficiais da polícia, Judy e Nick se deparam com a chegada de uma serpente misteriosa em Zootopia. Eles precisam usar disfarces, inteligência e coragem para desvendar o mistério, enfrentar desafios inéditos e proteger a cidade, enquanto aprofundam sua amizade e trabalho em equipe.",
+  },
+  {
+    "id": "7",
+    "nome": "Zootopia 2",
+    "nota": 4.6,
+    "img": "https://upload.wikimedia.org/wikipedia/pt/3/3a/Zootopia_2.jpg",
+     "sinopse": "Agora parceiros oficiais na polícia, Judy Hopps e Nick Wilde se veem em um caso completamente novo. Eles são chamados para vestir disfarces e trabalhar sob cobertura para investigar uma serpente misteriosa chamada Gary De’Snake, que chega à Zootopia e causa caos. A dupla é testada em sua habilidade de colaboração enquanto exploram novos bairros da cidade e enfrentam desafios inesperados para resolver esse mistério",
+  },
+  {
+    "id": "8",
+    "nome": "Robô Selvagem",
+    "nota": 4.7,
+    "img": "https://www.bing.com/th/id/OIP.OKDeP4OJSQXXJFpU85AkzwHaJQ?w=131&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+     "sinopse": "Após um naufrágio, a robô Roz desperta sozinha em uma ilha selvagem. Sem entender seu lugar ali, ela aprende a sobreviver na natureza e, aos poucos, cria laços com os animais locais, tornando-se parte da comunidade e descobrindo o que significa estar viva.",
+  },
+  {
+    "id": "9",
+    "nome": "Kung Fu Panda 1",
+    "nota": 4.5,
+    "img": "https://upload.wikimedia.org/wikipedia/en/7/76/Kungfupanda.jpg",
+     "sinopse": "Po, um panda desajeitado e fã de artes marciais, é inesperadamente escolhido como o “Guerreiro Dragão”. Mesmo desacreditado, ele precisa treinar com os Cinco Furiosos e o mestre Shifu para derrotar o temido vilão Tai Lung.",
+  },
+  {
+    "id": "10",
+    "nome": "Kung Fu Panda 2",
+    "nota": 3.5,
+    "img": "https://www.bing.com/th/id/OIP.2QdnF4yGnShSSmZG4DYYigHaKd?w=120&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+     "sinopse": "Po agora é um mestre consagrado, mas enfrenta um novo inimigo: Lord Shen, um pavão que criou uma arma mortal capaz de acabar com o kung fu. Durante a jornada, Po descobre a verdade sobre sua origem e sua família.",
+  },
+  {
+    "id": "11",
+    "nome": "Kung Fu Panda 3",
+    "nota": 3.2,
+    "img": "https://www.bing.com/th/id/OIP.-xMevYbQUeZLj0Sx-a1VVQHaKE?w=120&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+     "sinopse": "Po reencontra seu pai biológico e descobre a existência de uma vila secreta de pandas. Ao mesmo tempo, surge o vilão Kai, um guerreiro sobrenatural que rouba o chi dos mestres kung fu. Po precisa treinar os pandas para lutar e finalmente aceitar seu destino como mestre.",
+  },
+  {
+    "id": "12",
+    "nome": "Bolt",
+    "nota": 3.7,
+    "img": "https://www.bing.com/th/id/OIP.qpq_oxjeCOhSaHdM6hASPgHaHa?w=175&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+     "sinopse": "Bolt é um cachorro astro de TV que acredita ter superpoderes. Quando se perde de sua dona Penny no mundo real, ele descobre que não tem poderes de verdade, mas aprende sobre amizade, coragem e o que realmente significa ser herói.",
+  },
+  {
+    "id": "13",
+    "nome": "Rio",
+    "nota": 3.3,
+    "img": "https://th.bing.com/th/id/OIP.4LghItN4iCPKme2_9ntx0QHaLH?w=204&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+     "sinopse": "Blu, uma arara azul domesticada que nunca aprendeu a voar, viaja do Minnesota para o Rio de Janeiro para encontrar a última fêmea de sua espécie, Jewel. Juntos, eles vivem aventuras pela cidade, enfrentam caçadores e Blu aprende a voar de verdade.",
+  },
+  {
+    "id": "14",
+    "nome": "Rango",
+    "nota": 4.4,
+    "img": "https://th.bing.com/th/id/OIP.4BxVs1RPw2bRZgh3RRsDUAHaJ4?w=132&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+     "sinopse": "Um camaleão doméstico, perdido no deserto, chega à cidade de Dirt e, por acidente, vira xerife. Tentando manter sua farsa de herói, ele precisa enfrentar bandidos e descobrir quem realmente é.",
+  },
+  {
+    "id": "15",
+    "nome": "Gato de Botas 2",
+    "nota": 4.8,
+    "img": "https://th.bing.com/th/id/OIP.Sp_vS-Oyjd_v4zcMMyP3sQHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+     "sinopse": "Após gastar oito de suas nove vidas, o Gato de Botas descobre que está perto do fim de sua sorte. Para restaurar suas vidas perdidas, ele embarca em uma aventura cheia de ação, enfrentando velhos inimigos, fazendo novas alianças e aprendendo lições sobre amizade, coragem e aceitar limites.",
+  }
+];
+
+export default dados;
