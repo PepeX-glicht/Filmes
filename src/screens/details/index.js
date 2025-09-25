@@ -25,50 +25,51 @@ export default function Details(){
     <Text style ={stylest.sinopse}> {route.params.sinopse} </Text>
     </View>     
     )
-}
-
+};
 
 const stylest = StyleSheet.create({
-    titulo:{
-        color: '#fffefeff',
-        fontSize:30,
-        textAlign:'center',
-    },
 
-    textoNota:{
-        fontSize:20,
-        color:'#ffffffff',
-        textAlign:'center',
-    },
+titulo:{
+    color: '#fffefeff',
+    fontSize:30,
+    textAlign:'center',
+},
 
-    images:{
-        width: 300,
-        height: 400,
-        borderRadius:25,
-        margin:50,
-    },
+textoNota:{
+    fontSize:20,
+    color:'#ffffffff',
+    textAlign:'center',
+},
 
-    sinopse:{
-        fontSize:15,
-        color:'white',
-        textAlign:'center',
-        padding:20,
-    },
+images:{
+    width: 300,
+    height: 400,
+    borderRadius:25,
+    margin:50,
+},
 
-    myStarStyle: {
-        color: 'yellow',
-        backgroundColor: 'transparent',
-        textShadowColor: 'black',
-        textShadowOffset: {width: 1, height: 1},
-        textShadowRadius: 2,
-    },
+sinopse:{
+    fontSize:15,
+    color:'white',
+    textAlign:'center',
+    padding:20,
+},
 
-    myEmptyStarStyle: {
-        color: 'white',
-    },
+myStarStyle: {
+    color: 'yellow',
+    backgroundColor: 'transparent',
+    textShadowColor: 'black',
+    textShadowOffset: {width: 1, height: 1},
+    textShadowRadius: 2,
+},
 
-    body:{
-        backgroundColor:'#141a29',
-        flex:'1',
-    }
+myEmptyStarStyle: {
+    color: 'white',
+},
+
+body:{
+    backgroundColor:'#141a29',
+    flex:'1',
+}
+
 })
