@@ -27,7 +27,6 @@ images:{
     height:170,
     borderRadius:8
 }
-
 })
 
 export default styles
